@@ -1,1 +1,23 @@
-<p>header works!</p>
+<header class="wrap">
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <a routerLink="/catalog" routerLinkActive="active" class="menu__list-href">Коллекции</a>
+            </li>
+            <li class="menu__list-item">
+                <a routerLink="/education" routerLinkActive="active" class="menu__list-href">Обучение</a>
+            </li>
+            <li class="menu__list-item">
+                <a routerLink="/contact" routerLinkActive="active" class="menu__list-href">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <a class="logo" routerLink="/">
+        <img src="/assets/logo.svg" alt="logo">
+    </a>
+    <div class="links">
+        <a class="link__href" href=""><img class="link__href-img" src="/assets/icon_email.png" alt="email"></a>
+        <a class="link__href" href=""><img class="link__href-img" src="/assets/icon_telegram.svg" alt="telegram"></a>
+        <a class="link__href" href=""><img class="link__href-img" src="/assets/icon_instagram.svg" alt="instagram"></a>
+    </div>
+</header>
