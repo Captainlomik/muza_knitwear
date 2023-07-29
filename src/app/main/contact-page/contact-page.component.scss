@@ -1,0 +1,42 @@
+@import '/src/vars';
+
+.contact {
+    &__title {
+        margin-bottom: 30px;
+        text-decoration: underline $dark_main;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+
+        &-wrap {
+            background-color: $main;
+            padding: 50px 0;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.block {
+    &__img {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    &__txt &__txt {
+        &-info {
+            color: $black;
+        }
+
+        &-title {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+    }
+}
