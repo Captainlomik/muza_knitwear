@@ -1,0 +1,55 @@
+@import '/src/vars';
+
+footer {
+    background: $main;
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        width: 100px;
+        max-width: 150px;
+
+        &-wrap {
+            width: 300px;
+        }
+    }
+
+    &__links {
+        text-align: center;
+        margin-left: 100px;
+    }
+
+    &__txt {
+        text-align: end;
+    }
+
+    &__create {
+        margin-top: 15px;
+    }
+
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.link__href-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+footer a,
+footer p {
+    font-size: 12px;
+}
