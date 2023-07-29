@@ -1,0 +1,17 @@
+
+
+@mixin button{
+    border:1px solid $black;
+    padding: 12px 32px;
+    color: $black;
+    background: transparent;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+        background: $dark_main;
+        border: 1px solid $dark_main;
+        color: white;
+    }
+}
