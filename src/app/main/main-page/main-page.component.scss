@@ -1,0 +1,240 @@
+@import '/src/vars';
+
+.first {
+    background-color: $main;
+    height: calc(100vh - 10px);
+    margin-top: -130px;
+    padding-top: 140px;
+}
+
+.first {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__txt {
+        width: 50%;
+        text-align: center;
+
+        &-title {
+            margin-bottom: 40px;
+        }
+
+        &-btns {
+            margin: 40px 0;
+        }
+
+    }
+
+    &__btn {
+        &-done {
+            margin-right: 20px;
+            border: 1px solid $dark_main;
+            color: $dark_main;
+        }
+
+        &-done:hover {
+            color: white;
+        }
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__img:before {
+        content: '';
+        width: 68px;
+        height: 126px;
+        background-color: $dark_main;
+        display: inline-block;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+    }
+
+    &__img:after {
+        content: '';
+        width: 68px;
+        height: 126px;
+        background-color: $dark_main;
+        display: inline-block;
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+    }
+
+}
+
+img {
+    position: relative;
+    z-index: 2;
+}
+
+
+//ABOUT
+.about {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        background: url('/assets/me.png');
+        width: 410px;
+        height: 486px;
+    }
+
+    &__txt {
+        height: 486px;
+        width: 55%;
+        border: 10px solid $main;
+        border-right-width: 30px;
+        border-bottom-width: 20px;
+        padding: 30px 50px;
+    }
+}
+
+//COLLECTION
+.collection {
+    padding: 80px 0;
+    text-align: center;
+}
+
+//EXCLUSIVE
+.exclusive {
+    position: relative;
+    height: 420px;
+
+    &__bg {
+        background: url('/assets/exclusive_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__wrap {
+        background-color: rgba(255, 255, 255, 0.57);
+        ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+    }
+
+    &__title {
+        text-decoration: none;
+    }
+
+    &__txt {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        margin-bottom: 20px;
+        display: flex;
+        color: $black;
+
+        &-telegram::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: url('/assets/icon_telegram.svg');
+            margin-right: 15px;
+        }
+
+        &-email::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: url('/assets/icon_email.png');
+            background-size: cover;
+            margin-right: 15px;
+        }
+
+    }
+
+    &__btn {
+        padding: 8px 50px;
+        margin-top: 10px;
+    }
+}
+
+//EDUCATION
+.education {
+    background: $main;
+    padding: 80px 0;
+    text-align: center;
+
+    &__subtitle {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 80px auto;
+        width: 80%;
+    }
+
+    &__detail {
+        margin-right: 50px;
+    }
+}
+
+.item {
+    width: 25%;
+    margin-right: 20px;
+
+    &__icon {
+        margin-bottom: 20px;
+    }
+
+    &__txt {
+        max-width: 170px;
+    }
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+
+//FAQ 
+.faq {
+    padding: 80px 0;
+    text-align: center;
+
+    &__subtitle {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+}
