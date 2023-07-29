@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'vars';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h2 {
+    font-style: 28px;
+    font-weight: 400;
+    text-decoration: underline $dark_main;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrap {
+    margin: 0px 150px;
+}
+
+button{
+    @include button;
+}
