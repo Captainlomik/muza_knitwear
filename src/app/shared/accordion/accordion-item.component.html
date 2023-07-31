@@ -1,0 +1,9 @@
+<div class="accordion__header" (click)="toggle()">
+    <p class="accordion__header-title"> {{title}}</p>
+    <div [@rotatedState]="!showBody? 'default' : 'rotated'" class="accordion__cross">〱</div>
+</div>
+<div [@smoothCollapse]="!showBody? 'initial' : 'final'">
+    <div class="accordion__body">
+        <p> <ng-content></ng-content></p>
+    </div>
+</div>
