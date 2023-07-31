@@ -40,3 +40,32 @@
         }
     }
 }
+
+//FORM
+.form {
+    text-align: center;
+    padding: 50px 100px;
+    border: 1px solid $dark_main;
+    width: 45%;
+    margin: 0 auto;
+    box-shadow: 30px 20px $main;
+
+    &__wrap {
+        padding: 80px 0;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        margin-bottom: 30px;
+        border:none;
+        border-bottom: 1px solid $dark_main;
+    }
+}
