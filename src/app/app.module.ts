@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
