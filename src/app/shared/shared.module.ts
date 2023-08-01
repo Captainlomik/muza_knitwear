@@ -4,7 +4,8 @@ import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { AccordionItemComponent } from './accordion/accordion-item.component';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ModalComponent } from './modal/modal.component'
 
 
 
@@ -13,7 +14,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
     HeaderComponent,
     FooterComponent,
     AccordionComponent,
-    AccordionItemComponent
+    AccordionItemComponent,
+    ModalComponent
   ],
   imports: [
     RouterModule,
@@ -23,7 +25,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
     HeaderComponent,
     FooterComponent,
     AccordionComponent, 
-    AccordionItemComponent
+    AccordionItemComponent,
+    ModalComponent
   ]
 
 })
