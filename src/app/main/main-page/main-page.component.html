@@ -41,9 +41,20 @@
             <a class="exclusive__info exclusive__info-telegram">t.me/muza_kvant</a>
             <a class="exclusive__info exclusive__info-email" href="mailTo:test@mail.ru">test@mail.ru</a>
         </div>
-        <button class="exclusive__btn">Обсудить</button>
+        <button class="exclusive__btn" (click)="openModal(modalTemplate)">Обсудить</button>
     </div>
 </section>
+
+<ng-template #modalTemplate>
+   <h2 class="exclusive__modal-header">Индивидуальный заказ</h2>
+   <form action="" class="exclusive__modal-form">
+    <input type="text" >
+    <input type="text">
+    <button class="exclusive__modal-btn">Хочу обсудить заказ</button>
+   </form>
+
+  </ng-template>
+
 
 <section class="education">
     <div class="wrap">
@@ -82,7 +93,8 @@
             <img class="faq__block-img" src="/assets/faq_bg.png" alt="">
             <app-accordion class="faq__block-accordion">
                 <app-accordion-item title="Сколько стоит?">lolololo</app-accordion-item>
-                <app-accordion-item title="Могу ли я сделать заказ, если живу не в России?">lolololo</app-accordion-item>
+                <app-accordion-item
+                    title="Могу ли я сделать заказ, если живу не в России?">lolololo</app-accordion-item>
                 <app-accordion-item title="Как осуществляется доставка?">lolololo</app-accordion-item>
                 <app-accordion-item title="Каковы сроки изготовления изделия?">lolololo</app-accordion-item>
                 <app-accordion-item title="А чем вы вяжите?">lolololo</app-accordion-item>
@@ -92,3 +104,4 @@
     </div>
 
 </section>
+
