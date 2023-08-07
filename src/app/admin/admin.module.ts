@@ -5,6 +5,10 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { AdminRoutingModule } from './admin-routing.module';
 import { LayoutComponent } from './layout/layout.component';
 import { SharedModule } from '../shared/shared.module';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { CheckboxModule } from 'primeng/checkbox';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 
 
@@ -17,7 +21,11 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     AdminRoutingModule, 
-    SharedModule
+    SharedModule, 
+    ButtonModule,
+    InputTextModule,
+    CheckboxModule,
+    RadioButtonModule
   ]
 })
 export class AdminModule { }
