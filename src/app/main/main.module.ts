@@ -4,6 +4,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { LayoutComponent } from './layout/layout.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,11 +13,13 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     MainPageComponent,
     CatalogPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    LayoutComponent
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ]
 })
 export class MainModule { }
