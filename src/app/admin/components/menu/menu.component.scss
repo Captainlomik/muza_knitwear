@@ -1,0 +1,13 @@
+.navigation{
+    padding: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu{
+    &__ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
