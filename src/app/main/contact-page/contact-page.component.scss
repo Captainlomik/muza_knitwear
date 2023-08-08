@@ -1,4 +1,5 @@
 @import '/src/vars';
+@import '/src/mixins';
 
 .contact {
     &__title {
@@ -57,15 +58,16 @@
     &__inputs {
         display: flex;
         flex-direction: column;
+       
     }
 
     &__title {
         margin-bottom: 40px;
     }
 
-    &__input {
+    &__input { 
+        @include input;
         margin-bottom: 30px;
-        border:none;
-        border-bottom: 1px solid $dark_main;
+        resize: none;
     }
 }
