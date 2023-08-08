@@ -1,17 +1,46 @@
-
-
-@mixin button{
-    border:1px solid $black;
+@mixin button($color) {
+    border: 1px solid $color;
     padding: 12px 32px;
-    color: $black;
+    color: $color;
     background: transparent;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background: $dark_main;
         border: 1px solid $dark_main;
         color: white;
+    }
+}
+
+
+@mixin input {
+    border: none;
+    border-bottom: 1px solid $dark_main;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid $dark_main;
+    }
+}
+
+
+@mixin textarea {
+    border: none;
+    border-bottom: 1px solid $dark_main;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid $dark_main;
     }
 }
