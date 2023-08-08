@@ -10,7 +10,7 @@
   height: auto;
   background-color: $main;
   border-radius: 2px;
-  padding: 10px 20px;
+  padding: 50px 20px;
 
   &__content {
     margin-bottom: 20px;
@@ -20,6 +20,8 @@
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    top: -35px;
   }
 
   &__backdrop {
