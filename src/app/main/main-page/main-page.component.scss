@@ -1,4 +1,5 @@
 @import '/src/vars';
+@import '/src/mixins.scss';
 
 .first {
     background-color: $main;
@@ -180,6 +181,44 @@ img {
     }
 }
 
+//EXCLUSIVE MODAL
+.exclusive {
+    &__modal {
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-header {
+            margin-bottom: 30px;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        &-input {
+            margin-bottom: 20px;
+            @include input;
+        }
+
+        &-textarea {
+            @include textarea;
+        }
+
+        &-btn {
+            margin-top: 10px;
+            @include button($dark_main);
+
+        }
+    }
+}
+
+
 //EDUCATION
 .education {
     background: $main;
@@ -253,7 +292,7 @@ img {
         }
 
         &-accordion {
-           width: 70%;
+            width: 70%;
         }
     }
 }

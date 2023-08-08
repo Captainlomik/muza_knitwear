@@ -46,14 +46,15 @@
 </section>
 
 <ng-template #modalTemplate>
-   <h2 class="exclusive__modal-header">Индивидуальный заказ</h2>
-   <form action="" class="exclusive__modal-form">
-    <input type="text" >
-    <input type="text">
-    <button class="exclusive__modal-btn">Хочу обсудить заказ</button>
-   </form>
-
-  </ng-template>
+    <div class="exclusive__modal-wrap">
+        <h2 class="exclusive__modal-header">Индивидуальный заказ</h2>
+        <form action="" class="exclusive__modal-form">
+            <input class="exclusive__modal-input" type="text" placeholder="Имя">
+            <input class="exclusive__modal-input" type="text" placeholder="Телефон/телеграмм">
+            <button class="exclusive__modal-btn">Хочу обсудить заказ</button>
+        </form>
+    </div>
+</ng-template>
 
 
 <section class="education">
@@ -80,10 +81,22 @@
         </div>
         <div class="education__btns">
             <button class="education__detail">Подробнее</button>
-            <button class="education__enroll">Записаться</button>
+            <button class="education__enroll" (click)="openModal(modalEducation)">Записаться</button>
         </div>
     </div>
 </section>
+
+<ng-template #modalEducation>
+    <div class="exclusive__modal-wrap">
+        <h2 class="exclusive__modal-header">Записаться на обучение</h2>
+        <form action="" class="exclusive__modal-form">
+            <input class="exclusive__modal-input" type="text" placeholder="Имя">
+            <input class="exclusive__modal-input" type="text" placeholder="Телефон/телеграмм">
+            <textarea class="exclusive__modal-textarea" name="" id="" cols="5" rows="5" placeholder="Чему хотелось бы научиться?"></textarea>
+            <button class="exclusive__modal-btn">Хочу обсудить заказ</button>
+        </form>
+    </div>
+</ng-template>
 
 <section class="wrap">
     <div class="faq">
@@ -104,4 +117,3 @@
     </div>
 
 </section>
-
