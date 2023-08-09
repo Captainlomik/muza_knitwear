@@ -48,10 +48,10 @@
 <ng-template #modalTemplate>
     <div class="exclusive__modal-wrap">
         <h2 class="exclusive__modal-header">Индивидуальный заказ</h2>
-        <form action="" class="exclusive__modal-form">
-            <input class="exclusive__modal-input" type="text" placeholder="Имя">
-            <input class="exclusive__modal-input" type="text" placeholder="Телефон/телеграмм">
-            <button class="exclusive__modal-btn">Хочу обсудить заказ</button>
+        <form [formGroup]="orderForm" action="" class="exclusive__modal-form" (ngSubmit)="submitOrder()">
+            <input class="exclusive__modal-input" type="text" placeholder="Имя" formControlName="name">
+            <input class="exclusive__modal-input" type="text" placeholder="Телефон/телеграмм" formControlName="phone">
+            <button class="exclusive__modal-btn"  [disabled]="orderForm.invalid">Хочу обсудить заказ</button>
         </form>
     </div>
 </ng-template>
@@ -89,10 +89,11 @@
 <ng-template #modalEducation>
     <div class="exclusive__modal-wrap">
         <h2 class="exclusive__modal-header">Записаться на обучение</h2>
-        <form action="" class="exclusive__modal-form">
+        <form class="exclusive__modal-form">
             <input class="exclusive__modal-input" type="text" placeholder="Имя">
             <input class="exclusive__modal-input" type="text" placeholder="Телефон/телеграмм">
-            <textarea class="exclusive__modal-textarea" name="" id="" cols="5" rows="5" placeholder="Чему хотелось бы научиться?"></textarea>
+            <textarea class="exclusive__modal-textarea" name="" id="" cols="5" rows="5"
+                placeholder="Чему хотелось бы научиться?"></textarea>
             <button class="exclusive__modal-btn">Хочу обсудить заказ</button>
         </form>
     </div>
