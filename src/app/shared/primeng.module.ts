@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-
 
 
 @NgModule({
@@ -9,7 +7,8 @@ import { ButtonModule } from 'primeng/button';
   ],
   imports: [
     CommonModule,
-    ButtonModule
+  ],
+  exports: [
   ]
 })
 export class PrimengModule { }
