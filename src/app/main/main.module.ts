@@ -6,6 +6,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,12 +15,15 @@ import { RouterModule } from '@angular/router';
     MainPageComponent,
     CatalogPageComponent,
     ContactPageComponent,
-    LayoutComponent
+    LayoutComponent,
+
   ],
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }

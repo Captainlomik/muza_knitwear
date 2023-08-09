@@ -9,6 +9,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
@@ -17,6 +18,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     LoginComponent,
     MainPageComponent,
     LayoutComponent,
+    MenuComponent,
   ],
   imports: [
     CommonModule,
