@@ -1,0 +1,12 @@
+<div class="questions">
+    <div class="card" *ngFor="let question of questions">
+        <p-card class="card__header" header="{{question.name}}">
+            <div class="card__info">
+                <p class="card__info-item">Email:{{question.email}}</p>
+                <p class="card__info-item">Телефон:{{question.phone}}</p>
+                <p class="card__info-item">Дата:{{question.phone}}</p>
+            </div>
+            <p class="card__message">Сообщение: {{question.message}}</p>
+        </p-card>
+    </div>
+</div>
