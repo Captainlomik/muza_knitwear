@@ -6,18 +6,14 @@
                 <textarea class="settings__textarea" pInputTextarea name="" cols="40" rows="5" formControlName="aboutMe"
                     placeholder="Обо мне"></textarea>
                 <div class="settings__inputs">
-                    <div formArrayName="names">
-                        <div *ngFor="let name of getNames().controls; let i = index">
-                            <input type="text" pInputText formControlName="{{i}}" placeholder="Наименование" />
-                        </div>
-                    </div>
-                    <div formArrayName="texts">
-                        <div *ngFor="let name of getTexts().controls; let i = index">
-                            <input type="text" pInputText formControlName="{{i}}" placeholder="Ссылка/текст" />
-                        </div>
-                    </div>
-                    <p-button label="Добавить соц сеть" styleClass="p-button-raised p-button-secondary"
-                        (click)="addInfo()"></p-button>
+                    <input type="text" pInputText formControlName="vk" placeholder="Vk"/>
+                    <input type="text" pInputText formControlName="instagram" placeholder="Instagram"/>
+                    <input type="text" pInputText formControlName="telegram" placeholder="Telegram"/>
+                </div>
+                <div class="settings__inputs">
+                    <input type="text" pInputText formControlName="mail" placeholder="Mail"/>
+                    <input type="text" pInputText formControlName="phone" placeholder="Телефон"/>
+                    <input type="text" pInputText formControlName="phoneSrc" placeholder="Телефон_ссылка"/>
                 </div>
                 <p-button type="submit" label="Сохранить" [disabled]="settingsForm.invalid"></p-button>
             </form>
