@@ -1,0 +1,17 @@
+.settings{
+
+    &__inputs{
+        margin:20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__textarea{
+        margin-top: 20px;
+    }
+}
+
+input{
+    margin: 10px;
+}

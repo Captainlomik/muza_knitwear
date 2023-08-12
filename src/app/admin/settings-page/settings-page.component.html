@@ -1,0 +1,26 @@
+<p-card header="Настройки">
+    <div class="settings">
+        <p-fileUpload mode="basic" chooseLabel="Choose"></p-fileUpload>
+        <div class="settings__items">
+            <form [formGroup]="settingsForm" (ngSubmit)="submitSettings()">
+                <textarea class="settings__textarea" pInputTextarea name="" cols="40" rows="5" formControlName="aboutMe"
+                    placeholder="Обо мне"></textarea>
+                <div class="settings__inputs">
+                    <div formArrayName="names">
+                        <div *ngFor="let name of getNames().controls; let i = index">
+                            <input type="text" pInputText formControlName="{{i}}" placeholder="Наименование" />
+                        </div>
+                    </div>
+                    <div formArrayName="texts">
+                        <div *ngFor="let name of getTexts().controls; let i = index">
+                            <input type="text" pInputText formControlName="{{i}}" placeholder="Ссылка/текст" />
+                        </div>
+                    </div>
+                    <p-button label="Добавить соц сеть" styleClass="p-button-raised p-button-secondary"
+                        (click)="addInfo()"></p-button>
+                </div>
+                <p-button type="submit" label="Сохранить" [disabled]="settingsForm.invalid"></p-button>
+            </form>
+        </div>
+    </div>
+</p-card>
