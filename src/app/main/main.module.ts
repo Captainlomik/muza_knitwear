@@ -22,8 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     SharedModule,
     RouterModule,
-    FormsModule,
-    ReactiveFormsModule
+    FormsModule
   ]
 })
 export class MainModule { }

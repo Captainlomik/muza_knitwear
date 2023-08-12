@@ -8,6 +8,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ModalComponent } from './modal/modal.component';
 import { NotFoundComponent } from './not-found/not-found.component'
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     RouterModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     AccordionComponent, 
     AccordionItemComponent,
-    ModalComponent
+    ModalComponent,
+    ReactiveFormsModule
   ]
 
 })

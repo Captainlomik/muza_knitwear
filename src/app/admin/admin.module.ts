@@ -7,15 +7,16 @@ import { SharedModule } from '../shared/shared.module';
 import { MenuComponent } from './components/menu/menu.component';
 import { QuestionPageComponent } from './question-page/question-page.component';
 import { CardModule } from 'primeng/card';
+import { BrowserModule } from '@angular/platform-browser';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
 
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { TableModule } from 'primeng/table';
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FileUploadModule } from 'primeng/fileupload';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { BrowserModule } from '@angular/platform-browser';
     LayoutComponent,
     MenuComponent,
     QuestionPageComponent,
+    SettingsPageComponent,
 
   ],
   imports: [
@@ -36,7 +38,9 @@ import { BrowserModule } from '@angular/platform-browser';
     RadioButtonModule,
     TableModule,
     BrowserModule,
-    CardModule
+    CardModule,
+    FileUploadModule,
+    InputTextareaModule
 
   ]
 })
