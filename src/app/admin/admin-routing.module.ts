@@ -4,13 +4,15 @@ import { LoginComponent } from './login/login.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LayoutComponent } from './layout/layout.component';
 import { QuestionPageComponent } from './question-page/question-page.component';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
     path: 'admin', component: LayoutComponent, children: [
       { path: '', component: MainPageComponent },
-      { path: 'questions', component: QuestionPageComponent }
+      { path: 'questions', component: QuestionPageComponent },
+      { path: 'settings', component: SettingsPageComponent }
     ]
   }
 ]
