@@ -1,8 +1,6 @@
-import { Data } from "@angular/router";
-
 export interface Question {
     id: number;
-    date:Date;
+    date: Date;
     name: string;
     email: string;
     phone: string;
@@ -11,13 +9,6 @@ export interface Question {
 
 export interface Info {
     about: string;
-}
-
-export interface SocialInfo {
-    id: number;
-    icon: Data;
-    name: string;
-    text: string;
 }
 
 export interface Order {
@@ -38,4 +29,10 @@ export interface EducationOrder {
 export interface FAQ {
     question: string;
     answer: string;
+}
+
+export interface Collection{
+    img: ImageBitmap;
+    name: string; 
+    description: string
 }
