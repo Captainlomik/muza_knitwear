@@ -103,6 +103,34 @@ img {
 .collection {
     padding: 80px 0;
     text-align: center;
+
+    &__card {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 150px;
+    }
+
+    &__img {
+        order: 1;
+        width: 350px;
+        height: 350px;
+        box-shadow: -300px 0px #F2F8FB;
+    }
+
+    &__name {
+        order: 2;
+    }
+
+    .odd1 {
+        order: 1;
+    }
+
+    .odd2 {
+        order: 2;
+        box-shadow: 300px 0px #F2F8FB;
+    }
 }
 
 //EXCLUSIVE

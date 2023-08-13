@@ -28,7 +28,14 @@
 
 <section class="collection">
     <h2>Коллекции</h2>
-
+    <div *ngFor="let collection of collections| slice :0 : 3; let odd = odd">
+        <div class="collection__card">
+            <img class="collection__img" [ngClass]="{odd2: odd}" src="{{collection.img}}" alt="">
+            <h3 class="collection__name" [ngClass]="{odd1: odd}"><a class="collection__name-src"
+                    href="">{{collection.name}}</a></h3>
+        </div>
+    </div>
+    <button routerLink="/catalog">Все Коллекции</button>
 </section>
 
 <section class="exclusive">
@@ -51,7 +58,7 @@
         <form [formGroup]="orderForm" action="" class="exclusive__modal-form" (ngSubmit)="submitOrder()">
             <input class="exclusive__modal-input" type="text" placeholder="Имя" formControlName="name">
             <input class="exclusive__modal-input" type="text" placeholder="Телефон/телеграмм" formControlName="phone">
-            <button class="exclusive__modal-btn"  [disabled]="orderForm.invalid">Хочу обсудить заказ</button>
+            <button class="exclusive__modal-btn" [disabled]="orderForm.invalid">Хочу обсудить заказ</button>
         </form>
     </div>
 </ng-template>
