@@ -17,8 +17,8 @@ export class BaseService<T> {
     return this.http.get<[T]>(`${environment.url}/${this.url}/`, { params: params })
   }
 
-  get_byId(id: number, params?: HttpParams): Observable<[T]> {
-    return this.http.get<[T]>(`${environment.url}/${this.url}/${id}/`)
+  get_byId(id: number): Observable<T> {
+    return this.http.get<T>(`${environment.url}/${this.url}/${id}/`)
   }
 
   post(model: T): Observable<T> {
