@@ -1,13 +1,13 @@
 <div class="collections" >
-    <h1 class="collections__title wrap">Коллекции</h1>
+    <h1 class="collections__title title wrap">Коллекции</h1>
     <div class="collections__cards" *ngFor="let collection of collections; let odd = odd">
         <div class="collection__card card">
-            <div class="card__info" >
+            <div class="card__info" [ngClass]="{odd2:odd}">
                 <h3 сlass="card__info-item card__info-header">{{collection.name}}</h3>
                 <p class="card__info-item card__info-description">{{collection.description}}</p>
-                <a class="card__info-item card__info-src">Подробнее</a>
+                <a class="card__info-item card__info-src" [routerLink]="['/collection', collection.id]">Подробнее</a>
             </div>
-            <img class="card__img" src="/assets/me.png" alt="{{collection.name}}">
+            <img class="card__img" [ngClass]="{odd1:odd}" src="/assets/me.png" alt="{{collection.name}}">
         </div>
     </div>
 </div>

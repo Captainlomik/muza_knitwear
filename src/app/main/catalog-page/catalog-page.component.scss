@@ -1,12 +1,6 @@
 @import '/src/vars';
 @import '/src/mixins';
 
-.collections {
-    &__title {
-        margin-bottom: 30px;
-        text-decoration: underline $dark_main;
-    }
-}
 
 .card {
     width: 100%;
@@ -25,9 +19,24 @@
         align-items: start;
         justify-content: center;
         padding: 50px;
+        order: 1;
 
-        &-item{
+        &-item {
             padding-top: 30px;
+        }
+
+        &-src {
+            display: flex;
+            align-items: center;
+        }
+
+        &-src::after {
+            content: '';
+            width: 15px;
+            height: 7px;
+            background: url('/assets/arrow1.png');
+            display: block;
+            margin-left: 10px;
         }
     }
 
@@ -37,5 +46,18 @@
         position: relative;
         right: 100px;
         object-fit: cover;
+        order: 2;
     }
+}
+
+
+
+.odd1 {
+    order: 1;
+    right: -100px;
+}
+
+.odd2 {
+    order: 2;
+    padding-left: 200px;
 }
