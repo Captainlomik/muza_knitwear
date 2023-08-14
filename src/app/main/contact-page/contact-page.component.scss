@@ -2,11 +2,6 @@
 @import '/src/mixins';
 
 .contact {
-    &__title {
-        margin-bottom: 30px;
-        text-decoration: underline $dark_main;
-    }
-
     &__blocks {
         display: flex;
         justify-content: space-between;
