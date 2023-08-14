@@ -1,0 +1,12 @@
+<section *ngIf="collection$ | async as collection">
+    <div class="wrap">
+        <h1 class="collection__title title">{{collection.name}}</h1>
+        <a class="collection__breadcrumbs" routerLink="/catalog">Назад к коллекциям</a>
+    </div>
+    <div class="collection__description">
+        <p class="collection__description-txt wrap">{{collection.description}}</p>
+    </div>
+    <div class="collection__lots wrap">
+
+    </div>
+</section>

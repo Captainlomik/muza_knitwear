@@ -1,0 +1,30 @@
+@import '/src/vars';
+
+.collection {
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__breadcrumbs {
+        color: $sub_txt;
+        font-size: 12px;
+        cursor: pointer;
+
+        &:hover {
+            color: $dark_main;
+        }
+    }
+
+    &__description {
+        margin: 30px 0;
+        background-color: $main;
+        padding: 20px 0;
+
+        &-txt {
+            background-color: white;
+            padding: 20px;
+            font-size: 16px;
+        }
+    }
+
+}
