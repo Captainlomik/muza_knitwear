@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CollectionPageComponent } from './collection-page/collection-page.component';
 
 
 
@@ -16,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CatalogPageComponent,
     ContactPageComponent,
     LayoutComponent,
+    CollectionPageComponent,
 
   ],
   imports: [
