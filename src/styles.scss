@@ -59,3 +59,8 @@ p {
 button {
     @include button($black);
 }
+
+.title {
+    margin-bottom: 30px;
+    text-decoration: underline $dark_main;
+}
