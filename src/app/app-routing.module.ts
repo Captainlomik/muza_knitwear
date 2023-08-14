@@ -5,12 +5,14 @@ import { CatalogPageComponent } from './main/catalog-page/catalog-page.component
 import { ContactPageComponent } from './main/contact-page/contact-page.component';
 import { LayoutComponent } from './main/layout/layout.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
+import { CollectionPageComponent } from './main/collection-page/collection-page.component';
 
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
       {path:'', component:MainPageComponent},
       { path: 'catalog', component: CatalogPageComponent },
+      {path:'collection/:id', component:CollectionPageComponent},
       { path: 'contact', component: ContactPageComponent },
     ]
   },
