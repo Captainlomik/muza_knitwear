@@ -31,8 +31,26 @@ export interface FAQ {
     answer: string;
 }
 
-export interface Collection{
+export interface Collection {
+    id: number,
     img: ImageBitmap;
-    name: string; 
+    name: string;
     description: string
+}
+
+export interface Lot {
+    id: number,
+    name: string,
+    description: string,
+    consist: string,
+    size: string,
+    type: Type,
+    stock: boolean
+}
+
+enum Type{
+    jacket = "Кофта",
+    dress = "Платье" 
+
+
 }
