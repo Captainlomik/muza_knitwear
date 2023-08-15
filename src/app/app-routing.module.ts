@@ -6,14 +6,17 @@ import { ContactPageComponent } from './main/contact-page/contact-page.component
 import { LayoutComponent } from './main/layout/layout.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { CollectionPageComponent } from './main/collection-page/collection-page.component';
+import { LotDetailPageComponent } from './main/lot-detail-page/lot-detail-page.component';
 
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
-      {path:'', component:MainPageComponent},
+      { path: '', component: MainPageComponent },
       { path: 'catalog', component: CatalogPageComponent },
-      {path:'collection/:id', component:CollectionPageComponent},
+      { path: 'collection/:id', component: CollectionPageComponent },
+      { path: 'lot/:id', component: LotDetailPageComponent },
       { path: 'contact', component: ContactPageComponent },
+
     ]
   },
   { path: '404', component: NotFoundComponent }
