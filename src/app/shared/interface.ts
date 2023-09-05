@@ -38,13 +38,14 @@ export interface Collection {
     description: string
 }
 
-export interface Lot {
+export interface Product {
     id: number,
     name: string,
     description: string,
     consist: string,
     size: string,
     type: Type,
+    price: number,
     stock: boolean
 }
 
