@@ -23,6 +23,4 @@ export class CollectionPageComponent implements OnInit {
         return this.collectionsService.get_byId(params['id'])
       }))
   }
-
-
 }
