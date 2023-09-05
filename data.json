@@ -15,5 +15,55 @@
       "message": "h3434",
       "id": 2
     }
+  ],
+  "main": [
+    {
+      "aboutMe": "fdgdfg",
+      "vk": "sdf",
+      "instagram": "sd",
+      "telegram": "sd",
+      "phone": "32423",
+      "phoneSrc": "123",
+      "mail": "nastiy@mail.ru",
+      "id": 1
+    }
+  ],
+  "collection": [
+    {
+      "id": 1,
+      "img": "/assets/me.png",
+      "name": "Коллекция 1",
+      "description": "Описание большое описание"
+    },
+    {
+      "id": 2,
+      "img": "/assets/me.png",
+      "name": "Коллекция 2",
+      "description": "Описание большое описание"
+    },
+    {
+      "id": 3,
+      "img": "/assets/me.png",
+      "description": "Описание большое описание"
+    },
+    {
+      "id": 4,
+      "img": "/assets/me.png",
+      "name": "Коллекция 4",
+      "description": "Описание большое описание"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Жакет",
+      "description": "Описание большое описание свитера",
+      "consist": "Хлопок 100%",
+      "size": "Ширина:100, длина:60",
+      "type": "jacet",
+      "price": 12000,
+      "stock": true,
+      "collection_id": 1
+    }
   ]
 }
