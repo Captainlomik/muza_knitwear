@@ -1,14 +1,14 @@
 @import '/src/vars';
 @import '/src/mixins.scss';
 
+
+
 .first {
     background-color: $main;
     height: calc(100vh - 10px);
     margin-top: -130px;
     padding-top: 140px;
-}
 
-.first {
     &__wrap {
         display: flex;
         justify-content: space-between;
@@ -19,6 +19,7 @@
     &__txt {
         width: 50%;
         text-align: center;
+        margin-right: 30px;
 
         &-title {
             margin-bottom: 40px;
@@ -87,6 +88,7 @@ img {
         background: url('/assets/me.png');
         width: 410px;
         height: 486px;
+        margin-right: 30px;
     }
 
     &__txt {
@@ -114,7 +116,6 @@ img {
 
     &__img {
         order: 1;
-        width: 350px;
         height: 350px;
         box-shadow: -300px 0px #F2F8FB;
     }
@@ -323,4 +324,137 @@ img {
             width: 70%;
         }
     }
+}
+
+@media (max-width:720px) {
+    .first {
+        height: 100%;
+        margin-top: 0;
+        padding-top: 20px;
+
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__txt {
+            width: 100%;
+            order: 1;
+            margin-right: 0px;
+            margin-top: 20px;
+
+            &-title {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__img::before {
+            content: none;
+        }
+
+        &__img::after {
+            content: none;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__img img {
+            width: inherit;
+            margin: 0 auto;
+        }
+
+    }
+
+    //ABOUT
+    .about {
+        padding: 60px 0;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &__img {
+            margin: 0;
+            width: 320px;
+            height: 350px;
+        }
+
+        &__txt {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    //COLLECTIONS
+
+    .collection {
+        padding: 0px;
+
+        &__card {
+            height: auto;
+            margin: 0;
+        }
+
+        &__img {
+            width: 30%;
+            height: 100%;
+        }
+    }
+
+    //EXCLUSIVE
+    .exclusive {
+        &__txt {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+
+    //EDUCATION
+
+    .education {
+        &__block {
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 30px auto;
+            justify-content: space-around;
+        }
+
+        &__subtitle{
+            font-size: 18px;
+        }
+
+        &__btns{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__detail{
+            margin-right: 20px ;
+        }
+    }
+
+    .item{
+        max-width: 150px;
+        width: 40%;
+        margin-right: 10px;
+        margin-bottom: 20px;
+
+        &__icon{
+            margin-bottom: 10px;
+        }
+    }
+
+
+    //FAQ
+    .faq{
+        &__block{
+            flex-wrap: wrap;
+            img{
+                display: none;
+            }
+            &-accordion{
+                width: 100%;
+            }
+        }
+    }
+
 }
