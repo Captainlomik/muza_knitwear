@@ -8,6 +8,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CollectionPageComponent } from './collection-page/collection-page.component';
+import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
+import { ProductsComponent } from './components/products/products.component';
+
 
 
 
@@ -18,6 +21,8 @@ import { CollectionPageComponent } from './collection-page/collection-page.compo
     ContactPageComponent,
     LayoutComponent,
     CollectionPageComponent,
+    ProductDetailPageComponent,
+    ProductsComponent
 
   ],
   imports: [
