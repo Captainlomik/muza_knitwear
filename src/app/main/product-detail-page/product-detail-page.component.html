@@ -1,0 +1,15 @@
+<section class="lot wrap" *ngIf="product$ | async as product" >
+    <h1 class="lot__titile title">{{product.name}}</h1>
+    <div class="lot__card">
+        <div class="lot__card-carucel"></div>
+        <div class="lot__card-info">
+            <p class="lot__card-txt">Состав: {{product.consist}}</p>
+            <p class="lot__card-txt">Размер: {{product.size}}</p>
+            <p class="lot__card-txt">{{product.description}}</p>
+            <p class="lot__card-txt lot__card-price">Цена: {{product.price}}</p>
+            <button>Заказать</button>
+
+        </div>
+    </div>
+
+</section>
