@@ -1,3 +1,5 @@
+@import '/src/vars';
+
 header {
     display: flex;
     align-items: center;
@@ -11,11 +13,20 @@ header {
     align-items: center;
 
     &-item {
-        padding-right: 20px;
+        margin-right: 20px;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid $dark_main;
+        }
     }
 
     &-item:last-child {
         padding-right: 0;
+    }
+
+    &-href {
+        color: $black;
     }
 }
 
@@ -34,10 +45,19 @@ header {
         padding-right: 0;
     }
 
-    &__href-img{
+    &__href-img {
         width: 22px;
         height: 22px;
     }
 }
 
-.active {color:red;}
+.active {
+    border-bottom: 2px solid $dark_main;
+}
+
+
+@media (max-width:720px) {
+    header{
+        display: none;
+    }
+}
