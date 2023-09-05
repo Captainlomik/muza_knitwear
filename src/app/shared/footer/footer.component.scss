@@ -53,3 +53,9 @@ footer a,
 footer p {
     font-size: 12px;
 }
+
+@media (max-width:720px) {
+    footer {
+        display: none;
+    }
+}
